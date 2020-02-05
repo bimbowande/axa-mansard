@@ -1,0 +1,268 @@
+@import 'mixin/variable';
+@import 'mixin/reset';
+@import 'mixin/base';
+@import 'mixin/abstract';
+@import 'mixin/responsive';
+
+
+body{
+    background-color: $bg_color;
+    font-size: 14px;
+    @include mobile-phones{
+        font-size: 12px;
+    }
+}
+
+label{
+    font-weight: 600;
+}
+
+.container-for-page{ 
+}
+
+.logo-image{
+    & img{
+       
+    }
+}
+
+.header{
+    & hr{
+        margin-bottom: 10px;
+        border:1px solid rgb(141, 10, 10);
+        margin-top:10px;
+    }
+}
+
+.header-text{
+    padding: 10px;
+    background-color: rgb(3, 3, 32);
+    text-align: center;
+    color: white;
+    font-size: 1.8rem;
+    @include mobile-phones{
+        font-size:.9rem;
+    }
+}
+
+select,input{
+    font-family: poppins;
+}
+
+
+
+.header{
+    font-size:1.3rem ;
+    @include mobile-phones{
+        font-size: .8rem;
+    }
+}
+
+.content-for-page{
+    @include  dimension(80%,100%);
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 10px;
+    min-height: 400px;
+}
+
+
+label{
+    font-weight: 400;
+}
+
+.section-container{
+    padding: 10px;
+}
+
+
+.section-div{
+    background-color: rgba(129, 134, 233, 0.2677);
+    padding: 20px 10px;
+    margin-bottom: 20px;
+    margin-top:20px; 
+}
+
+.forms-input{
+    @include flex;
+    flex-flow: wrap;
+}
+.header-logo-text{
+    justify-content: center;
+    align-self: center;
+    & img{
+        width:80%;
+    }
+}
+
+.flex{
+    display:-webkit-flex;
+    display: flex;
+}
+
+.input-div{
+    padding: 10px;
+    margin: 1px;
+    flex-direction: column;
+    @include flex;
+    width:45%;
+   
+   & label{
+        font-weight: 500;
+    }
+
+    & input,select{
+        padding: 15px;
+    }
+    & input{
+        margin-top: 10px;
+        width:90%;
+        border-radius: 5px;
+        outline: none;
+        border:none;
+        border:1px solid #ccc;
+        box-shadow: none;
+    }
+    & select{
+        width:50%;
+        @include mobile-phones{
+            width: 80%;
+        }
+    }
+    &-subsection{
+        display: flex;
+        flex-direction: column;
+    }
+    @include mobile-phones{
+        width:90%;
+    }
+}
+
+ i.star-icon{
+     color:red;
+ }
+
+//instruction
+.instruction{
+    text-align: center;
+    margin-top: 20px;
+    &-text{
+        font-size: .8rem;
+        display: inline-block;
+        padding: 5px 20px;
+        margin-top: 10px;
+        font-style: italic;
+        border-radius: 20px;
+        color:white;
+        background-color: rgb(3, 3, 32);
+
+        @include mobile-phones{
+            font-size: .65rem;
+        }
+       
+    }
+}
+
+
+
+.container-for-radio {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+.container-for-radio{
+    position: relative;
+    margin-top: 10px;
+    & input{
+        position: absolute;
+         //opacity: 0;
+        left:-200px;
+        cursor: pointer;
+    }
+    & .checkmark{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 25px;
+        width: 25px;
+        background-color: #eee;
+        border-radius: 50%;
+    }
+}
+
+.container-for-radio:hover input ~ .checkmark{
+    background-color: #ccc;
+}
+
+.container-for-radio input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .container-for-radio input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  .container-for-radio .checkmark:after {
+    top: 9px;
+   left: 9px;
+   width: 8px;
+   height: 8px;
+   border-radius: 50%;
+   background: white;
+}
+
+
+//checkbox
+.checkmark-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+  .container-for-radio:hover input ~ .checkmark-box {
+    background-color: #ccc;
+  }
+
+  .container-for-radio input:checked ~ .checkmark-box:after {
+    display: block;
+  }
+
+  .container-for-radio input:checked ~ .checkmark-box {
+    background-color: #2196F3;
+  }
+  .container-for-radio .checkmark-box:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .short-div{
+    width:20% !important;
+    @include mobile-phones{
+        width:80% !important;
+    }
+  }
+  .short-input{
+     
+  }
