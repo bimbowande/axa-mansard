@@ -1,0 +1,47 @@
+@mixin flex {
+    display:-webkit-flex;
+    display: flex;
+}
+
+
+
+//mixin for grid 
+@mixin grid($flex){
+
+    @if $flex{
+        @include flex
+    }
+    @else{
+        display: block;
+    }
+}
+
+
+//position
+@mixin  postion($pos) {
+    @if $pos{
+        position: relative;
+    }
+    @else{
+        position: absolute;
+    }
+}
+
+//mixin dimesnsions
+
+@mixin dimension($width,$height) {
+    width: $width;
+    height: $height;
+}
+//full div
+%full-div{
+    width: 100%;
+    height: 100%;
+}
+
+//flex loop
+@for $i from 1 through 10{
+   .flex-#{$i}{
+        flex:$i;
+    }
+}
