@@ -260,3 +260,23 @@ i.star-icon {
     .requirements .requirements-div ol li {
       margin-bottom: 5px;
       font-size: .78rem; }
+  @media screen and (max-width: 1000px) {
+    .requirements .requirements-div {
+      padding: 5px; } }
+
+@media screen and (max-width: 1000px) {
+  .requirements {
+    flex-direction: column; } }
+
+.image-container {
+  position: relative; }
+  .image-container input {
+    position: absolute;
+    bottom: 0;
+    z-index: 678765676567;
+    opacity: 0; }
+  .image-container .icon-change {
+    position: absolute;
+    bottom: 10px;
+    font-size: 1.6rem;
+    right: 10px; }

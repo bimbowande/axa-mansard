@@ -294,5 +294,28 @@ label{
                   font-size: .78rem;
               }
           }
+          @include mobile-phones{
+              padding: 5px;
+          }
+      }
+
+      @include mobile-phones{
+          flex-direction: column;
+      }
+  }
+
+  .image-container{
+      position: relative;
+      & input{
+          position: absolute;
+          bottom: 0;
+          z-index: 678765676567;
+          opacity: 0;
+      }
+      & .icon-change{
+          position: absolute;
+          bottom: 10px;
+          font-size: 1.6rem;
+          right:10px;
       }
   }
