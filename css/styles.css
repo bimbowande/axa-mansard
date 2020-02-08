@@ -50,6 +50,14 @@ body {
 label {
   font-weight: 600; }
 
+.user-image {
+  height: 150px; }
+  .user-image .image-container {
+    width: 150px;
+    height: 150px;
+    background-color: #ccc;
+    border-radius: 120px; }
+
 .header hr {
   margin-bottom: 10px;
   border: 1px solid #8d0a0a;
@@ -241,3 +249,14 @@ i.star-icon {
   @media screen and (max-width: 1000px) {
     .short-div {
       width: 80% !important; } }
+
+.requirements .requirements-div {
+  padding: 10px;
+  margin: 5px; }
+  .requirements .requirements-div h3 {
+    margin-bottom: 10px; }
+  .requirements .requirements-div ol {
+    margin-left: 15px; }
+    .requirements .requirements-div ol li {
+      margin-bottom: 5px;
+      font-size: .78rem; }

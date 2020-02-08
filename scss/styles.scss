@@ -20,6 +20,17 @@ label{
 .container-for-page{ 
 }
 
+.user-image{
+    height:150px;
+ 
+
+    & .image-container{
+        width:150px;
+        height:150px;
+        background-color: #ccc;
+        border-radius: 120px;
+    }
+}
 .logo-image{
     & img{
        
@@ -265,4 +276,23 @@ label{
   }
   .short-input{
      
+  }
+
+
+  .requirements{
+      & .requirements-div{
+          padding: 10px;
+          margin: 5px;
+
+          & h3{
+              margin-bottom: 10px;
+          }
+          & ol{
+              margin-left:15px;
+              li{
+                  margin-bottom: 5px;
+                  font-size: .78rem;
+              }
+          }
+      }
   }
