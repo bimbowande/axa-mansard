@@ -183,6 +183,7 @@ i.star-icon {
   margin-top: 10px; }
   .container-for-radio input {
     position: absolute;
+    opacity: 0;
     left: -200px;
     cursor: pointer; }
   .container-for-radio .checkmark {
